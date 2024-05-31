@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; /* Set width and height to fill the entire viewport */
+    overflow: hidden; /* Hide scrollbars if images overflow */
+}
+
+.loader img {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeIn 2s forwards;
+}
+
+/* Fade in animation */
+/* Fade in animation for the third image */
+.fade-in {
+    opacity: 0; /* Start with opacity 0 */
+    transition: opacity 2s ease-in-out; /* Transition property */
+  }
+  
+  .fade-in.active {
+    opacity: 1; /* End with opacity 1 when the 'active' class is added */
+  }
+  
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+      opacity: 1; /* End with opacity 1 */
+    }
+  }
+  
