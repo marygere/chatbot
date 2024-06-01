@@ -1,0 +1,21 @@
+<?php session_start();?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../assets/FAC LOGO - WHITE ( ISOLATED ) -01-01.png">
+  <title>Loading Page</title>
+  <link rel="stylesheet" href="../css/loading_page.css">
+</head>
+<body>
+  <div class="loader">
+    <img src="../assets/PLAIN.jpg" alt="Loading Image 1">
+    <img src="../assets/Base Background .jpg" alt="Loading Image 2">
+    <img src="../assets/SCREEN LOADING SHOULD BE .jpg" alt="Loading Image 3" class="fade-in">
+  </div>
+
+  <script src="../js/loading_page.js"></script>
+</body>
+</html>
